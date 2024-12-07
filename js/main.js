@@ -22,11 +22,31 @@ document
   .addEventListener("click", function (event) {
     //   *Preventing default loading
     event.preventDefault();
-    // *Checking available balance
-    const accountMoney = accountBalance();
     // *Receiving donation amount
     const donatedMoney = donationAmount("noakhali-amount");
+    //   *Checking donation amount validation result
+    if (typeof donatedMoney === "undefined") {
+      return;
+    }
+    // *Available balance
+    const accountMoney = accountBalance();
     //*New balance
     const newAccountBalance = accountMoney - donatedMoney;
-    console.log(accountMoney, donatedMoney, newAccountBalance);
+    //   *Previous donation balance
+    const donationMoney = donationBalance("noakhali-donation-amount");
+    //   *New donation balance
+    const newDonationBalance = donationMoney + donatedMoney;
+    console.log(
+      accountMoney,
+      donatedMoney,
+      newAccountBalance,
+      newDonationBalance
+    );
+    //   *Show updated balance
+    //   *Updated balance amount
+    document.getElementById("account-balance-lg").innerText = newAccountBalance;
+    document.getElementById("account-balance-sm").innerText = newAccountBalance;
+    //   *Updated Noakhali donation amount
+    document.getElementById("noakhali-donation-amount").innerText =
+      newDonationBalance;
   });
