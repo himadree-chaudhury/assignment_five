@@ -28,12 +28,13 @@ document
     if (typeof donatedMoney === "undefined") {
       return;
     }
-    // *Available balance
+    //  *Available balance
     const accountMoney = accountBalance();
-    //*New balance
-    const newAccountBalance = accountMoney - donatedMoney;
     //   *Previous donation balance
     const donationMoney = donationBalance("noakhali-donation-amount");
+
+    //  *New balance
+    const newAccountBalance = accountMoney - donatedMoney;
     //   *New donation balance
     const newDonationBalance = donationMoney + donatedMoney;
     console.log(
@@ -50,7 +51,6 @@ document
     document.getElementById("noakhali-donation-amount").innerText =
       newDonationBalance;
   });
-
 
 // *Donation card - 2
 document
@@ -84,5 +84,40 @@ document
     document.getElementById("account-balance-sm").innerText = newAccountBalance;
     //   *Updated Feni donation amount
     document.getElementById("feni-donation-amount").innerText =
+      newDonationBalance;
+  });
+
+// *Donation card - 3
+document
+  .getElementById("quota-donation")
+  .addEventListener("click", function (event) {
+    //   *Preventing default loading
+    event.preventDefault();
+    // *Receiving donation amount
+    const donatedMoney = donationAmount("quota-amount");
+    //   *Checking donation amount validation result
+    if (typeof donatedMoney === "undefined") {
+      return;
+    }
+    // *Available balance
+    const accountMoney = accountBalance();
+    //*New balance
+    const newAccountBalance = accountMoney - donatedMoney;
+    //   *Previous donation balance
+    const donationMoney = donationBalance("quota-donation-amount");
+    //   *New donation balance
+    const newDonationBalance = donationMoney + donatedMoney;
+    console.log(
+      accountMoney,
+      donatedMoney,
+      newAccountBalance,
+      newDonationBalance
+    );
+    //   *Show updated balance
+    //   *Updated balance amount
+    document.getElementById("account-balance-lg").innerText = newAccountBalance;
+    document.getElementById("account-balance-sm").innerText = newAccountBalance;
+    //   *Updated Quota donation amount
+    document.getElementById("quota-donation-amount").innerText =
       newDonationBalance;
   });
