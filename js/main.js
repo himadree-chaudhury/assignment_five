@@ -1,10 +1,13 @@
-//   *Navigate to blog page
+//   *Navigate to blog page for large device
 document.getElementById("blog-btn").addEventListener("click", function () {
+  window.location.href = "../faq.html";
+});
+//   *Navigate to blog page for small device
+document.getElementById("blog-btn-sm").addEventListener("click", function () {
   window.location.href = "../faq.html";
 });
 
 //   *Donation & History btn toggle switching
-
 //   *Donation btn toggle
 document.getElementById("donation-btn").addEventListener("click", function () {
   toggleSwitching("donation-section", "donation-btn");
