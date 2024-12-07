@@ -25,7 +25,7 @@
 
 <!-- *Body Starts -->
 
-<body class="pt-56 sm:pt-52">
+<body class="pt-56 lg:pt-52">
     <!-- *Header Section Starts -->
     <header class="fixed w-full top-0 z-50 backdrop-blur-md">
         <!-- **Navbar Starts -->
@@ -34,7 +34,7 @@
                 <nav class="flex items-center justify-between p-3 text-black ">
                     <!-- *Blog-btn -->
                     <div class="hidden sm:block">
-                        <a href="#" title=""
+                        <a id="blog-btn" href="#" title=""
                             class=" text-white bg-green-500 border-0 py-2 px-6  hover:bg-green-600 rounded text-lg transition-colors duration-200 ease-in-out"
                             role="button">Blog</a>
                     </div>
@@ -72,13 +72,13 @@
             <div class="flex justify-center gap-5">
                 <!-- *Donation btn -->
                 <div class="">
-                    <a href="#" title=""
+                    <a id="donation-btn" href="#" title=""
                         class=" text-white border border-gray-200 py-2 px-6 bg-green-500 md:hover:bg-green-600 md:hover:text-white rounded text-lg transition-colors duration-200 ease-in-out"
                         role="button">Donation</a>
                 </div>
                 <!-- *History btn -->
                 <div class="">
-                    <a href="#" title=""
+                    <a id="history-btn" href="#" title=""
                         class=" text-black border border-gray-200 py-2 px-6 md:hover:bg-green-600 md:hover:text-white rounded text-lg transition-colors duration-200 ease-in-out"
                         role="button">History</a>
                 </div>
@@ -89,7 +89,7 @@
     <!-- *Main Section Starts -->
     <main class="">
         <!-- *Donation Section  -->
-        <section>
+        <section id="donation-section">
             <!-- *Donation Card -1 -->
             <section class="text-gray-600 py-2">
                 <div
@@ -225,13 +225,17 @@
             </section>
         </section>
         <!-- *Transaction History Section -->
-        <section class="hidden">
+        <section id="history-section" class="hidden">
 
         </section>
     </main>
     <!-- *Footer Section Starts -->
     <footer class="bg-[#F9F7F3] h-20 mt-10">
     </footer>
+
+    <!-- *JS Links -->
+    <script src="./js/main.js"></script>
+    <script src="./js/utilities.js"></script>
 </body>
 
 </html>

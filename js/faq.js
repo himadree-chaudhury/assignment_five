@@ -1,8 +1,5 @@
-console.log("hello");
-
-// *Navigate to blog page
-document.getElementById("blog-btn").addEventListener("click", function () {
-  window.location.href = "../faq.html";
+document.getElementById("landing-page").addEventListener("click", function () {
+  window.location.href = "../index.html";
 });
 
 // *Donation & History btn toggle switching

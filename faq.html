@@ -30,7 +30,7 @@
 
 <!-- *Body Starts -->
 
-<body class="pt-56 sm:pt-52">
+<body class="pt-56 lg:pt-52">
     <!-- *Header Section Starts -->
     <header class="fixed w-full top-0 z-50 backdrop-blur-md">
         <!-- **Navbar Starts -->
@@ -39,15 +39,18 @@
                 <nav class="flex items-center justify-between p-3 text-black ">
                     <!-- *Blog-btn -->
                     <div class="hidden sm:block">
-                        <a href="#" title=""
+                        <a id="blog-btn" href="#" title=""
                             class=" text-white bg-green-500 border-0 py-2 px-6  hover:bg-green-600 rounded text-lg transition-colors duration-200 ease-in-out"
                             role="button">Blog</a>
                     </div>
                     <!-- *Website Title -->
                     <div class="flex justify-center items-center gap-3">
                         <img class="w-8 h-8" src="./assets/logo.png" alt="">
-                        <h1 class="text-2xl font-medium leading-tight sm:text-3xl lg:text-4xl">Donate Bangladesh
-                        </h1>
+                        <a href="#" id="landing-page">
+                            <h1 class="text-2xl font-medium leading-tight sm:text-3xl lg:text-4xl">
+                                Donate Bangladesh
+                            </h1>
+                        </a>
                     </div>
 
                     <!-- *Account Balance -->
@@ -77,13 +80,13 @@
             <div class="flex justify-center gap-5">
                 <!-- *Donation btn -->
                 <div class="">
-                    <a href="#" title=""
+                    <a id="donation-btn" href="#" title=""
                         class=" text-white border border-gray-200 py-2 px-6 bg-green-500 md:hover:bg-green-600 md:hover:text-white rounded text-lg transition-colors duration-200 ease-in-out"
                         role="button">Donation</a>
                 </div>
                 <!-- *History btn -->
                 <div class="">
-                    <a href="#" title=""
+                    <a id="history-btn" href="#" title=""
                         class=" text-black border border-gray-200 py-2 px-6 md:hover:bg-green-600 md:hover:text-white rounded text-lg transition-colors duration-200 ease-in-out"
                         role="button">History</a>
                 </div>
@@ -91,10 +94,150 @@
         </header>
     </header>
 
+
     <!-- *Man Section Starts -->
     <main>
+        <!-- *Donation Section  -->
+        <section id="donation-section" class="hidden">
+            <!-- *Donation Card -1 -->
+            <section class="text-gray-600 py-2">
+                <div
+                    class="max-w-6xl px-4 py-5 mx-auto sm:px-6 lg:px-8 flex md:flex-row flex-col gap-3 md:gap-0 items-center border-2 border-slate-200 rounded-2xl">
+                    <!-- *Donation Image - 1 -->
+                    <div class="">
+                        <img class="object-cover object-center rounded" alt="hero" src="./assets/noakhali.png">
+                    </div>
+                    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col items-start md:text-left">
+                        <!-- *Donation Received -->
+                        <div class="flex items-center text-xl bg-slate-200 p-2 rounded-xl">
+                            <img class=" pr-5 object-cover w-10 h-5" src="./assets/coin.png" alt="">
+                            <p class="pr-1 text-sm font-medium">600000</p>
+                            <p class="text-sm font-medium">BDT</p>
+                        </div>
+                        <!-- *Donation Details -->
+                        <h1 class="title-font sm:text-4xl text-3xl py-3 font-medium text-gray-900 text-left">Donate for
+                            Flood at Noakhali, Bangladesh </h1>
+                        <p class="font-light text-justify">The recent floods in Noakhali have caused significant damage
+                            to
+                            homes infrastructure.
+                            Your donation will help provide essential supplies and to those affected by this disaster.
+                            Every
+                            contribution, big
+                            or small, makes difference. Please join us in supporting the relief efforts and making a
+                            positive impact on the
+                            lives of those in need.</p>
+                        <!-- *Donation Form -->
+                        <div class="w-full">
+                            <div class="py-2">
+                                <!-- *Donation Amount Field -->
+                                <input type="text" id="hero-field" name="hero-field" placeholder="Write Donation Amount"
+                                    class="w-full font-light bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-green-200 focus:bg-transparent focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                            <!-- *Donate btn -->
+                            <button
+                                class="w-full text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Donate
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- *Donation Card -2 -->
+            <section class="text-gray-600 py-2">
+                <div
+                    class="max-w-6xl px-4 py-5 mx-auto sm:px-6 lg:px-8 flex md:flex-row flex-col gap-3 md:gap-0 items-center border-2 border-slate-200 rounded-2xl">
+                    <!-- *Donation Image - 2 -->
+                    <div class="">
+                        <img class="object-cover object-center rounded" alt="hero" src="./assets/feni.png">
+                    </div>
+                    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col items-start md:text-left">
+                        <!-- *Donation Received -->
+                        <div class="flex items-center text-xl bg-slate-200 p-2 rounded-xl">
+                            <img class=" pr-5 object-cover w-10 h-5" src="./assets/coin.png" alt="">
+                            <p class="pr-1 text-sm font-medium">1020300</p>
+                            <p class="text-sm font-medium">BDT</p>
+                        </div>
+                        <!-- *Donation Details -->
+                        <h1 class="title-font sm:text-4xl text-3xl py-3 font-medium text-gray-900 text-left">Donate for
+                            Flood Relief in Feni,Bangladesh
+                        </h1>
+                        <p class="font-light text-justify">The recent floods in Feni have devastated local communities,
+                            leading to severe disruption and loss. Your generous
+                            donation will help provide immediate aid, including food, clean water, and medical supplies,
+                            to
+                            those affected by this
+                            calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of
+                            this
+                            disaster. Every
+                            contribution counts towards making a real difference. Please consider donating today to
+                            assist
+                            those in urgent need.</p>
+                        <!-- *Donation Form -->
+                        <div class="w-full">
+                            <div class="py-2">
+                                <!-- *Donation Amount Field -->
+                                <input type="text" id="hero-field" name="hero-field" placeholder="Write Donation Amount"
+                                    class="w-full font-light bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-green-200 focus:bg-transparent focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                            <!-- *Donate btn -->
+                            <button
+                                class="w-full text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Donate
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- *Donation Card -3 -->
+            <section class="text-gray-600 py-2">
+                <div
+                    class="max-w-6xl px-4 py-5 mx-auto sm:px-6 lg:px-8 flex md:flex-row flex-col gap-3 md:gap-0 items-center border-2 border-slate-200 rounded-2xl">
+                    <!-- *Donation Image - 3 -->
+                    <div class="">
+                        <img class="object-cover object-center rounded" alt="hero" src="./assets/quota-protest.png">
+                    </div>
+                    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col items-start md:text-left">
+                        <!-- *Donation Received -->
+                        <div class="flex items-center text-xl bg-slate-200 p-2 rounded-xl">
+                            <img class=" pr-5 object-cover w-10 h-5" src="./assets/coin.png" alt="">
+                            <p class="pr-1 text-sm font-medium">80000</p>
+                            <p class="text-sm font-medium">BDT</p>
+                        </div>
+                        <!-- *Donation Details -->
+                        <h1 class="title-font sm:text-4xl text-3xl py-3 font-medium text-gray-900 text-left">Aid for
+                            Injured
+                            in the Quota Movement
+                        </h1>
+                        <p class="font-light text-justify">The recent Quota movement has resulted in numerous injuries
+                            and
+                            significant hardship for many individuals. Your support
+                            is crucial in providing medical assistance, rehabilitation, and necessary supplies to those
+                            affected. By contributing,
+                            you help ensure that injured individuals receive the care and support they need during this
+                            challenging time. Every
+                            donation plays a vital role in alleviating their suffering and aiding in their recovery.
+                            Please
+                            consider making a
+                            donation to support these brave individuals in their time of need.</p>
+                        <!-- *Donation Form -->
+                        <div class="w-full">
+                            <div class="py-2">
+                                <!-- *Donation Amount Field -->
+                                <input type="text" id="hero-field" name="hero-field" placeholder="Write Donation Amount"
+                                    class="w-full font-light bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-green-200 focus:bg-transparent focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                            <!-- *Donate btn -->
+                            <button
+                                class="w-full text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Donate
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- *Transaction History Section -->
+        <section id="history-section" class="hidden">
+        </section>
         <!-- *FAQ Section -->
-        <section class="py-10 sm:py-16 lg:py-24">
+        <section id="faq-section" class="py-10 sm:py-16 lg:py-24">
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="max-w-2xl mx-auto ">
                     <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl inline-flex gap-4">
@@ -189,9 +332,11 @@
             </div>
             </div>
         </section>
-
-
     </main>
+
+    <!-- *JS Links -->
+    <script src="./js/utilities.js"></script>
+    <script src="./js/faq.js"></script>
 </body>
 
 </html>
