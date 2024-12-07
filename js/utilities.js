@@ -38,3 +38,18 @@ function donationBalance(id) {
   const balance = parseFloat(document.getElementById(id).innerText);
   return balance;
 }
+
+// *Transaction history
+function transactionHistory(taka,str) {
+     const div = document.createElement("div");
+     div.classList.add("max-w-3xl", "mx-auto", "py-2");
+     div.innerHTML = `
+    <div class=" border rounded-xl border-gray-200 w-full px-4 py-5 sm:p-6">
+                <!-- *Donation Details -->
+                <span class="flex text-lg font-semibold text-black  text-left"> ${taka} Taka is Donated for ${str},Bangladesh</span>
+                <!-- *Donation Date -->
+                <p class="font-light">Date : ${new Date()} </p>
+            </div>
+      `;
+     document.getElementById("history-section").appendChild(div);
+}

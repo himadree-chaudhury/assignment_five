@@ -56,8 +56,10 @@ document
       newDonationBalance;
     //   *Clearing input field
     document.getElementById("noakhali-amount").value = "";
-  });
 
+    //   *Add the donation in transaction history
+    transactionHistory(donatedMoney, "Flood Relief in Noakhali");
+  });
 //   *Donation card - 2
 document
   .getElementById("feni-donation")
