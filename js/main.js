@@ -1,5 +1,3 @@
-console.log("hello");
-
 // *Navigate to blog page
 document.getElementById("blog-btn").addEventListener("click", function () {
   window.location.href = "../faq.html";
