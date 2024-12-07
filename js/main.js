@@ -7,12 +7,12 @@ document.getElementById("blog-btn").addEventListener("click", function () {
 
 //   *Donation btn toggle
 document.getElementById("donation-btn").addEventListener("click", function () {
-  toggleSwitching("donation-section");
+  toggleSwitching("donation-section", "donation-btn");
 });
 
 //   *History btn toggle
 document.getElementById("history-btn").addEventListener("click", function () {
-  toggleSwitching("history-section");
+  toggleSwitching("history-section", "history-btn");
 });
 
 //   *Donation
@@ -41,12 +41,6 @@ document
     const newAccountBalance = accountMoney - donatedMoney;
     //   *New donation balance
     const newDonationBalance = donationMoney + donatedMoney;
-    console.log(
-      accountMoney,
-      donatedMoney,
-      newAccountBalance,
-      newDonationBalance
-    );
     //   *Show updated balance
     //   *Updated balance amount
     document.getElementById("account-balance-lg").innerText = newAccountBalance;
@@ -85,12 +79,6 @@ document
     const newAccountBalance = accountMoney - donatedMoney;
     //   *New donation balance
     const newDonationBalance = donationMoney + donatedMoney;
-    console.log(
-      accountMoney,
-      donatedMoney,
-      newAccountBalance,
-      newDonationBalance
-    );
     //   *Show updated balance
     //   *Updated balance amount
     document.getElementById("account-balance-lg").innerText = newAccountBalance;
@@ -100,6 +88,8 @@ document
       newDonationBalance;
     //   *Clearing input field
     document.getElementById("feni-amount").value = "";
+    //   *Add the donation in transaction history
+    transactionHistory(donatedMoney, "Flood Relief in Feni");
   });
 
 //   *Donation card - 3
@@ -127,12 +117,6 @@ document
     const newAccountBalance = accountMoney - donatedMoney;
     //   *New donation balance
     const newDonationBalance = donationMoney + donatedMoney;
-    console.log(
-      accountMoney,
-      donatedMoney,
-      newAccountBalance,
-      newDonationBalance
-    );
     //   *Show updated balance
     //   *Updated balance amount
     document.getElementById("account-balance-lg").innerText = newAccountBalance;
@@ -142,4 +126,6 @@ document
       newDonationBalance;
     //   *Clearing input field
     document.getElementById("quota-amount").value = "";
+    //   *Add the donation in transaction history
+    transactionHistory(donatedMoney, "Injured in the Quota Movement");
   });
