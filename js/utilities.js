@@ -2,8 +2,6 @@
 
 //   *Toggling section
 function toggleSwitching(section, btn) {
-//   document.getElementById("faq-section").classList.add("hidden");
-
   // *Donation
   document.getElementById("donation-section").classList.add("hidden");
   document
@@ -21,9 +19,9 @@ function toggleSwitching(section, btn) {
   document.getElementById(section).classList.remove("hidden");
   document.getElementById(section).classList.add("block");
   //   *Toggling switching active btn
-    document.getElementById(btn).classList.add("bg-green-500", "text-white");
-    
-    document.getElementById("faq-section").classList.add("hidden");
+  document.getElementById(btn).classList.add("bg-green-500", "text-white");
+  // *FAQ section hidden
+  document.getElementById("faq-section").classList.add("hidden");
 }
 
 // *Achieve donation amount
