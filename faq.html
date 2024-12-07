@@ -28,7 +28,70 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<!-- *Body Starts -->
+
+<body class="pt-56 sm:pt-52">
+    <!-- *Header Section Starts -->
+    <header class="fixed w-full top-0 z-50 backdrop-blur-md">
+        <!-- **Navbar Starts -->
+        <div class="bg-[#F9F7F3] backdrop-blur-sm">
+            <div class="px-4 pb-3 sm:pb-6 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
+                <nav class="flex items-center justify-between p-3 text-black ">
+                    <!-- *Blog-btn -->
+                    <div class="hidden sm:block">
+                        <a href="#" title=""
+                            class=" text-white bg-green-500 border-0 py-2 px-6  hover:bg-green-600 rounded text-lg transition-colors duration-200 ease-in-out"
+                            role="button">Blog</a>
+                    </div>
+                    <!-- *Website Title -->
+                    <div class="flex justify-center items-center gap-3">
+                        <img class="w-8 h-8" src="./assets/logo.png" alt="">
+                        <h1 class="text-2xl font-medium leading-tight sm:text-3xl lg:text-4xl">Donate Bangladesh
+                        </h1>
+                    </div>
+
+                    <!-- *Account Balance -->
+                    <div class="hidden sm:flex items-center text-lg">
+                        <img class=" pr-5 object-cover w-10 h-5" src="./assets/coin.png" alt="">
+                        <p class="pr-1">10000</p>
+                        <p>BDT</p>
+                    </div>
+                </nav>
+                <!-- *Navbar Only For Mobile Device -->
+                <div class="sm:hidden py-5 sm:py-0  flex justify-between">
+                    <!-- *Blog-btn -->
+                    <a href="#" title=""
+                        class=" text-white bg-green-500 border-0 py-2 px-6 hover:bg-green-600 rounded text-lg transition-colors duration-200 ease-in-out"
+                        role="button">Blog</a>
+                    <!-- *Account Balance -->
+                    <div class="flex items-center text-lg">
+                        <img class=" pr-5 object-cover w-10 h-5" src="./assets/coin.png" alt="">
+                        <p class="pr-1">600</p>
+                        <p>BDT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- *Donation & History btn -->
+        <header class="pt-8 sm:pt-16 pb-4 sm:pb-8 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
+            <div class="flex justify-center gap-5">
+                <!-- *Donation btn -->
+                <div class="">
+                    <a href="#" title=""
+                        class=" text-white border border-gray-200 py-2 px-6 bg-green-500 md:hover:bg-green-600 md:hover:text-white rounded text-lg transition-colors duration-200 ease-in-out"
+                        role="button">Donation</a>
+                </div>
+                <!-- *History btn -->
+                <div class="">
+                    <a href="#" title=""
+                        class=" text-black border border-gray-200 py-2 px-6 md:hover:bg-green-600 md:hover:text-white rounded text-lg transition-colors duration-200 ease-in-out"
+                        role="button">History</a>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <!-- *Man Section Starts -->
     <main>
         <!-- *FAQ Section -->
         <section class="py-10 sm:py-16 lg:py-24">
