@@ -230,6 +230,24 @@
                 </div>
             </section>
         </section>
+        <!-- *Modal Section -->
+        <div id="confirmation-modal" class="fixed left-0 top-0 w-full z-20 pt-60 hidden">
+            <!-- *Modal Content -->
+            <div id="modal-content"
+                class="relative p-8 text-center border border-1 rounded-2xl md:w-2/5 w-3/4 mx-auto bg-[#F9F7F3] backdrop-blur-sm">
+                <h1 class="text-2xl font-bold leading-tight sm:text-3xl lg:text-4xl">Congrats !</h1>
+                <div class="flex flex-col justify-center space-y-8">
+                    <!-- *Modal Image -->
+                    <img src="./assets/coin.png" alt="" class="h-8 w-8 mx-auto mt-8">
+                    <p class="font-light">You Have Donated For Humankind</p>
+                    <h1 class="text-xl font-bold leading-tight lg:text-2xl">Successfully</h1>
+                    <!-- *Modal Close btn -->
+                    <button id="modal-close"
+                        class="w-1/2 mx-auto text-white text-center border border-gray-200 py-2 bg-green-500 md:hover:bg-green-600 md:hover:text-white rounded text-base transition-colors duration-200 ease-in-out"
+                        role="button">Close Confirmation</button>
+                </div>
+            </div>
+        </div>
         <!-- *Transaction History Section -->
         <section id="history-section" class="hidden">
 

@@ -54,6 +54,9 @@ document
     //   *Clearing input field
     document.getElementById("noakhali-amount").value = "";
 
+    // *Modal show successful transaction
+    modalPopUp();
+
     //   *Add the donation in transaction history
     transactionHistory(donatedMoney, "Flood Relief in Noakhali");
   });
