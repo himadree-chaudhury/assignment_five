@@ -37,7 +37,7 @@ document
     const donationMoney = donationBalance("noakhali-donation-amount");
     //   *Donation validity check
     if (donatedMoney > accountMoney) {
-      alert("alert");
+      alert("Insufficient Balance");
       return;
     }
     //   *New balance
@@ -78,7 +78,7 @@ document
     const donationMoney = donationBalance("feni-donation-amount");
     //   *Donation validity check
     if (donatedMoney > accountMoney) {
-      alert("alert");
+      alert("Insufficient Balance");
       return;
     }
     //*New balance
@@ -120,7 +120,7 @@ document
     const donationMoney = donationBalance("quota-donation-amount");
     //   *Donation validity check
     if (donatedMoney > accountMoney) {
-      alert("alert");
+      alert("Insufficient Balance");
       return;
     }
     //*New balance

@@ -33,7 +33,7 @@ function donationAmount(id) {
     isNaN(donateMoney) ||
     donateMoney < 0
   ) {
-    alert("alert");
+    alert("Invalid Input. Please Check Again");
     return;
   }
   return donateMoney;
