@@ -8,8 +8,8 @@
 #modal-content {
   animation-name: modalPopUp;
   animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
 }
-
 /* %Animation Keyframe */
 @keyframes modalPopUp {
   from {

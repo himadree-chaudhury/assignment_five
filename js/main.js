@@ -94,6 +94,10 @@ document
       newDonationBalance;
     //   *Clearing input field
     document.getElementById("feni-amount").value = "";
+
+    // *Modal show successful transaction
+    modalPopUp();
+
     //   *Add the donation in transaction history
     transactionHistory(donatedMoney, "Flood Relief in Feni");
   });
@@ -132,6 +136,10 @@ document
       newDonationBalance;
     //   *Clearing input field
     document.getElementById("quota-amount").value = "";
+
+    // *Modal show successful transaction
+    modalPopUp();
+
     //   *Add the donation in transaction history
     transactionHistory(donatedMoney, "Injured in the Quota Movement");
   });
