@@ -54,7 +54,7 @@ document
     //   *Clearing input field
     document.getElementById("noakhali-amount").value = "";
 
-    // *Modal show successful transaction
+    // *Modal show on successful transaction
     modalPopUp();
 
     //   *Add the donation in transaction history
@@ -95,7 +95,7 @@ document
     //   *Clearing input field
     document.getElementById("feni-amount").value = "";
 
-    // *Modal show successful transaction
+    // *Modal show on successful transaction
     modalPopUp();
 
     //   *Add the donation in transaction history
@@ -137,7 +137,7 @@ document
     //   *Clearing input field
     document.getElementById("quota-amount").value = "";
 
-    // *Modal show successful transaction
+    // *Modal show on successful transaction
     modalPopUp();
 
     //   *Add the donation in transaction history

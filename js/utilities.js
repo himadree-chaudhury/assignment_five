@@ -70,11 +70,11 @@ function transactionHistory(taka, str) {
   document.getElementById("history-section").appendChild(div);
 }
 
-// *Modal Activity
+// *Modal activity
 function modalPopUp() {
   // *Show modal
   document.getElementById("confirmation-modal").style.display = "block";
-  // *Hide Modal
+  // *Hide modal
   document.getElementById("modal-close").onclick = function () {
     document.getElementById("confirmation-modal").style.display = "none";
   };
